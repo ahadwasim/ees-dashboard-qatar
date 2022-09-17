@@ -17,7 +17,7 @@ app.on('ready', () => {
             nodeIntegration: true,
             contextIsolation: false
         },
-        icon: './build/lohum-icon.ico',
+        icon: './build/fuji-logo.ico',
         title: 'Online Dashboard'
     })
 
@@ -70,6 +70,7 @@ function createAddWindow() {
         },
         width: 300,
         height: 260,
+        icon: './build/fuji-logo.ico',
         title: 'Add Device ID'
     });
     // Load HTML into window
@@ -92,6 +93,7 @@ function createDeleteWindow() {
         },
         width: 780,
         height: 500,
+        icon: './build/fuji-logo.ico',
         title: 'Edit Device ID'
     });
     // Load HTML into window
@@ -161,6 +163,9 @@ const mainMenuTemplate = [
                     fullScreen = !mainWindow.isFullScreen();
                     mainWindow.setFullScreen(fullScreen);
                 }
+            },
+            {
+                role: 'reload'
             }
         ]
     }

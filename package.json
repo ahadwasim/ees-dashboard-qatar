@@ -1,11 +1,10 @@
 {
   "name": "ees_online_dashboard",
-  "version": "2.1.0",
+  "version": "1.0.0",
   "description": "Online Dashboard",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "install": "electron-rebuild",
     "dist:linux": "electron-builder --linux",
     "dist": "electron-builder"
   },
@@ -19,9 +18,9 @@
     "electron": "^20.1.0"
   },
   "build": {
-    "appId": "com.ees.lohumdash",
+    "appId": "com.ees.fujidash",
     "compression": "maximum",
-    "productName": "LohumDash",
+    "productName": "FujiDash",
     "target": [
       {
         "target": "nsis",
@@ -32,7 +31,7 @@
       }
     ],
     "win": {
-      "icon": "./build/lohum-icon.png"
+      "icon": "./build/fuji-logo.png"
     },
     "nsis": {
       "allowToChangeInstallationDirectory": true,
